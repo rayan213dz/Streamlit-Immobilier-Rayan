@@ -68,21 +68,16 @@ st.divider()
 # -----------------------------
 @st.cache_data
 def load_data(path):
-    import os
-    if not os.path.exists(path):
-        st.error(f"❌ Fichier introuvable : {path}")
-        return pd.DataFrame()  # évite crash
     df = pd.read_csv(path, low_memory=False)
     df.columns = df.columns.str.strip().str.replace(" ", "_").str.lower()
     return df
-
 
 try:
     # ⚙️ Chargement depuis le dossier local
     df_insee = load_data("data/clean/insee_logement_2021_clean.csv")
     df_loyers = load_data("data/clean/loyers_clean_2024.csv")
     df_dvf = load_data("data/clean/dvf_clean_2024.csv")
-    df_dvf_all = load_data("data/clean/dvf_clean_2020_2024.csv")
+    df_dvf_all = load_data("data/clean/dvf_clean_2020_2024_sample.csv")
 
     st.sidebar.success("✅ Données chargées depuis le dossier local : data/clean")
 
