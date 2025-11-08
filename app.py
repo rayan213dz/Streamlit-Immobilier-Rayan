@@ -47,7 +47,7 @@ menu = option_menu(
 
 # 🌟 --- En-tête ---
 st.markdown("""
-# 🏠 Portfolio Rayan — Projet immobilier interactif  
+# 🏠 Portfolio Rayan - Projet immobilier interactif  
 ### Analyse et visualisation de données immobilières françaises  
 
 Ce tableau de bord fait partie de mon portfolio, illustrant mes compétences en :
