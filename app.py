@@ -47,15 +47,20 @@ menu = option_menu(
 
 # 🌟 --- En-tête ---
 st.markdown("""
-# 🏠 Tableau de bord immobilier interactif  
-### Un projet développé par **Rayan** : visualisation et analyse des données immobilières françaises 
+# 🏠 Portfolio Rayan — Projet immobilier interactif  
+### Analyse et visualisation de données immobilières françaises  
 
-Ce tableau de bord interactif combine **données publiques (DVF, INSEE, loyers 2024)** et outils analytiques pour explorer :
-- la faisabilité d’un achat étudiant 🧑‍🎓  
-- les rendements bruts et tensions locatives 🏙️  
-- la relation entre **achat et location** selon les départements 💰  
+Ce tableau de bord fait partie de mon portfolio, illustrant mes compétences en :
+- data analysis (Python, Pandas, NumPy)  
+- data visualization (Plotly, Streamlit)  
+- gestion et nettoyage de données publiques (DVF, INSEE)  
 
-> Un projet personnel conçu pour démontrer mes compétences en **data analysis, Python et Streamlit** 🚀
+Il combine **données publiques (DVF, INSEE, loyers 2024)** et outils analytiques pour explorer :
+- la faisabilité d’un achat étudiant 
+- les rendements bruts et tensions locatives 
+- la relation entre **achat et location** selon les départements   
+
+> Inspiré d’un projet collaboratif, puis retravaillé individuellement pour le portfolio.
 """)
 
 st.divider()
