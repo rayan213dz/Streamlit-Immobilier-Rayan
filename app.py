@@ -68,9 +68,14 @@ st.divider()
 # -----------------------------
 @st.cache_data
 def load_data(path):
+    import os
+    if not os.path.exists(path):
+        st.error(f"❌ Fichier introuvable : {path}")
+        return pd.DataFrame()  # évite crash
     df = pd.read_csv(path, low_memory=False)
     df.columns = df.columns.str.strip().str.replace(" ", "_").str.lower()
     return df
+
 
 try:
     # ⚙️ Chargement depuis le dossier local
